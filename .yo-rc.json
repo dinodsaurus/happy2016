@@ -1,0 +1,7 @@
+{
+  "generator-react-webpack": {
+    "appName": "happy2016",
+    "style": "scss",
+    "postcss": true
+  }
+}
