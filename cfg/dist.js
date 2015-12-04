@@ -6,6 +6,7 @@ var baseConfig = require('./base');
 
 // Add needed plugins here
 var BowerWebpackPlugin = require('bower-webpack-plugin');
+var CopyWebpackPlugin = require('copy-webpack-plugin');
 
 var config = _.merge({
   entry: path.join(__dirname, '../src/components/run'),
@@ -13,6 +14,12 @@ var config = _.merge({
   devtool: 'sourcemap',
   plugins: [
     new webpack.optimize.DedupePlugin(),
+    new CopyWebpackPlugin([
+          {
+            from: 'src/svg',
+            to: 'svg'
+           }
+      ]),
     new webpack.DefinePlugin({
       'process.env.NODE_ENV': '"production"'
     }),

@@ -6,7 +6,7 @@ module.exports = {
   port: port,
   debug: true,
   output: {
-    path: path.join(__dirname, '/../dist/assets'),
+    path: path.join(__dirname, '/../dist'),
     filename: 'app.js',
     publicPath: publicPath
   },
