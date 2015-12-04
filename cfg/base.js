@@ -41,6 +41,14 @@ module.exports = {
       }],
     loaders: [
       {
+          test: require.resolve('snapsvg'),
+          loader: 'imports-loader?this=>window,fix=>module.exports=0'
+      },
+      {
+          test: require.resolve('jquery'),
+          loader: 'imports-loader?this=>window,fix=>module.exports=0'
+      },
+      {
         test: /\.css$/,
         loader: 'style-loader!css-loader!postcss-loader'
       },

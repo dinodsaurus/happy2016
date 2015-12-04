@@ -4,18 +4,15 @@ body {
   background: #222;
 }
 
-.index img {
-  margin: 40px auto;
-  border-radius: 4px;
-  background: #fff;
-  display: block;
+.happy{
+	float:left;
+	height: 50vh;
+	width: 100vw;
+  background: #2f6651;
 }
-
-.index .notice {
-  margin: 20px auto;
-  padding: 15px 0;
-  text-align: center;
-  border: 1px solid #000;
-  border-width: 1px 0;
-  background: #666;
+.holidays{
+	float:left;
+	height: 50vh;
+	width: 100vw;
+  background:#4c3356;
 }
