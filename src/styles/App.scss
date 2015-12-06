@@ -1,0 +1,73 @@
+/* Base Application Styles */
+body {
+  background: #4c3356;
+}
+.pan1{
+  float:left;
+  height:20vh;
+  width:100vw;
+  background:#4c3356;
+}
+.happy{
+	float:left;
+	height: 50vh;
+	width: 100vw;
+  background: #2f6651;
+}
+.holidays{
+	float:left;
+	height: 50vh;
+	width: 100vw;
+  background:#4c3356;
+}
+.and{
+	float:left;
+	height: 50vh;
+	width: 100vw;
+  background:#2f6651;
+}
+.number{
+  float:left;
+  height: 50vh;
+  width: 25vw;
+  &.two{
+    background:#d84141;
+  }
+  &.zero{
+    background:#1d332f;
+  }
+  &.one{
+    background:#e0ddc0;
+  }
+  &.six{
+    background:#4c3356;
+  }
+}
+.content{
+  float:left;
+  width: 100%;
+  background: #d84141;
+  color:#e0ddc0;
+  padding:80px 0;
+  .block{
+    width:400px;
+    margin:0 auto;
+    font-size:14px;
+    a{
+      font-weight:bold;
+      color:#e0ddc0;
+      text-decoration:none;
+    }
+  }
+}
+
+@media only screen and (max-width: 760px) {
+    .res{
+      height:auto;
+    }
+}
+@media only screen and (max-width: 500px) {
+    .number{
+      width: 50vw;
+    }
+}

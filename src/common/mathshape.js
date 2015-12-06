@@ -14,8 +14,8 @@
 // Assume this code is a proof of concept and a nice demo. No guarantee for how this code
 // holds up under greater loads, heavy files, production or otherwise demanding environments.
 
-import Snap from "snapsvg";
-import $ from "jquery";
+import Snap from 'snapsvg';
+import $ from 'jquery';
 
 class MathShape {
   constructor(elementId, miURL) {
