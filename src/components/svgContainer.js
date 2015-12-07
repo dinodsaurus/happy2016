@@ -14,10 +14,19 @@ class SvgComponent extends React.Component {
     if(this.props.fill){
       mathshape.setFill(this.props.fill);
     }
+    this.breathe();
     window.addEventListener('resize', this.handleResize.bind(this));
   }
   handleResize(){
     this.state.mathshape.calculateFactors();
+  }
+  breathe(){
+    let breathShape = 0;
+    let factor = this.props.breathe || 0.04;
+    setInterval(function () {
+      breathShape += factor;
+      this.state.mathshape.breathe(0.5*Math.sin(breathShape*Math.PI)+0.5)
+    }.bind(this), 50);
   }
   renderSvg(){
     // Until React fully supports svg we simply append the svg portion after

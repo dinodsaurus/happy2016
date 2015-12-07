@@ -2,7 +2,19 @@
 body {
   background: #4c3356;
 }
-.pan1{
+.pen1{
+  float:left;
+  height:20vh;
+  width:100vw;
+  background:#2f6651;
+}
+.pen2{
+  float:left;
+  height:20vh;
+  width:100vw;
+  background:#e0ddc0;
+}
+.pen3{
   float:left;
   height:20vh;
   width:100vw;
@@ -50,9 +62,10 @@ body {
   color:#e0ddc0;
   padding:80px 0;
   .block{
-    width:400px;
+    max-width:440px;
     margin:0 auto;
     font-size:14px;
+    padding:0 20px;
     a{
       font-weight:bold;
       color:#e0ddc0;
