@@ -49,6 +49,10 @@ module.exports = {
           loader: 'imports-loader?this=>window,fix=>module.exports=0'
       },
       {
+        test: /\.svg$/,
+        loader: 'file-loader'
+      },
+      {
         test: /\.css$/,
         loader: 'style-loader!css-loader!postcss-loader'
       },

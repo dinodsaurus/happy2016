@@ -21,8 +21,18 @@ class SvgComponent extends React.Component {
     this.state.mathshape.calculateFactors();
   }
   breathe(){
+    const self = this;
+    let factor = parseFloat(this.props.breathe) || 0.04;
+    if(this.props.delay){
+      setTimeout(() => {
+        self.interval(factor);
+      }, 1300);
+    } else {
+      self.interval(factor);
+    }
+  }
+  interval(factor ){
     let breathShape = 0;
-    let factor = this.props.breathe || 0.04;
     setInterval(function () {
       breathShape += factor;
       this.state.mathshape.breathe(0.5*Math.sin(breathShape*Math.PI)+0.5)

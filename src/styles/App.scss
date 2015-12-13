@@ -1,6 +1,10 @@
 /* Base Application Styles */
 body {
   background: #4c3356;
+  font-family: "Nocturno Display Regular 7";
+  font-style: normal;
+  font-weight: normal;
+  font-stretch: normal;
 }
 .pen1{
   float:left;
@@ -22,13 +26,13 @@ body {
 }
 .happy{
 	float:left;
-	height: 50vh;
+	height: 47vh;
 	width: 100vw;
   background: #2f6651;
 }
 .holidays{
 	float:left;
-	height: 50vh;
+	height: 47vh;
 	width: 100vw;
   background:#4c3356;
 }
@@ -40,7 +44,7 @@ body {
 }
 .number{
   float:left;
-  height: 50vh;
+  height: 25vw;
   width: 25vw;
   &.two{
     background:#d84141;
@@ -60,22 +64,49 @@ body {
   width: 100%;
   background: #d84141;
   color:#e0ddc0;
-  padding:80px 0;
+  padding:100px 0;
   .block{
-    max-width:440px;
+    max-width:620px;
     margin:0 auto;
-    font-size:14px;
+    font-size:18px;
     padding:0 20px;
+    img{
+      width: 100%;
+      &:first-child{
+        margin-bottom:30px;
+      }
+      &.second{
+        margin-top:30px;
+      }
+    }
     a{
-      font-weight:bold;
+      font-family: "Nocturno Display Bold 11";
+      font-style: normal;
+      font-weight: normal;
+      font-stretch: normal;
       color:#e0ddc0;
       text-decoration:none;
+      &.github{
+        display:block;
+        width: 50px;
+        height: 50px;
+        margin:30px auto;
+        img{
+          opacity:1;
+          width: 100%;
+          transition:opacity .3;
+          &:hover{
+            opacity:.8;
+          }
+        }
+      }
     }
   }
 }
 
 @media only screen and (max-width: 760px) {
     .res{
+      line-height: 0;
       height:auto;
     }
 }
